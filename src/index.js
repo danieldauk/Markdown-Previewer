@@ -1,6 +1,6 @@
 import React, {Component} from "react";
 import ReactDOM from "react-dom";
-import "../styles/main.css";
+import "../styles/main.scss";
 import initialText from "./initialText";
 
 import PostMarkdown from "./components/postMarkdown";
@@ -25,13 +25,13 @@ class MarkdownPreviewer extends Component {
           <h3>Markdown Previewer</h3>
         </div>
         <div className="textBox">
-        <textarea
-          value = {this.state.term}
-          onChange = {event => this.setState({term: event.target.value})}
-          ></textarea>
-        <PostMarkdown
-            className="processedText"
-            preMarkdownText = {this.state.term}
+          <textarea
+            value = {this.state.term}
+            onChange = {event => this.setState({term: event.target.value})}
+            ></textarea>
+          <PostMarkdown
+              className="processedText"
+              preMarkdownText = {this.state.term}
           />
         </div>
       </div>

@@ -1,5 +1,25 @@
 @import url('https://fonts.googleapis.com/css?family=Arimo');
 
+//color variables
+$red: #FC4349;
+$grey: #2C3E50;
+$skyBlue: #6DBCDB;
+$lightGrey: #D7DADB;
+
+//placeholders
+%textAreas {
+  box-sizing: border-box;
+  overflow: auto;
+  min-width: 44%;
+  max-height: 80vh;
+  margin: 5px 3% 0px 3%;
+  border: 2px solid rgba(0,0,0,0.5);
+  padding: 10px;
+  background-color: $lightGrey;
+  border-radius: 10px;
+}
+
+
 * {
   outline: none;
 }
@@ -7,33 +27,29 @@
 body{
   margin: 0px;
   font-family: "Arimo", sans-serif;
-  background: #6DBCDB;
+  background: $skyBlue;
 }
 
 .title {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  background: #FC4349;
+  background: $red;
   margin: 0px;
   padding: 0px;
   height: 18vh;
+  h3 {
+    width: 100%;
+    text-align: center;
+    margin: 0px;
+    color: $grey;
+    margin-bottom: 5px;
+  }
+  img {
+    width: 100px;
+    height: 80px;
+  }
 }
-
-.title h3 {
-  width: 100%;
-  text-align: center;
-  margin: 0px;
-  color: #2C3E50;
-  margin-bottom: 5px;
-}
-
-.title img {
-  width: 100px;
-  height: 80px;
-}
-
-
 
 .textBox {
   display: flex;
@@ -43,36 +59,18 @@ body{
 .processedText {
     min-width: 44%;
     margin: 0px 3% 0px 3%;
-
 }
 
 textarea {
+    @extend %textAreas;
     resize: none;
-    box-sizing: border-box;
-    overflow: auto;
-    min-width: 44%;
-    max-height: 80vh;
-    margin: 5px 3% 0px 3%;
-    border: 2px solid rgba(0,0,0,0.5);
-    border-radius: 10px;
-    padding: 10px;
-    background-color: #D7DADB;
-}
-
-img {
-  width: 100px;
 }
 
 .markdown-body {
-		box-sizing: border-box;
-    overflow: auto;
-    max-height: 80vh;
-    border: 2px solid rgba(0,0,0,0.5);
-    border-radius: 10px;
-    min-width: 44%;
-    margin: 5px 3% 0px 3%;
-    padding: 10px;
-    background-color: #D7DADB;
+    @extend %textAreas;
+    img {
+      width: 100px;
+    }
 	}
 
 ::-webkit-scrollbar {
