@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css?family=Arimo');
+
+* {
+  outline: none;
+}
+
+body{
+  margin: 0px;
+  font-family: "Arimo", sans-serif;
+  background: #6DBCDB;
+}
+
+.title {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background: #FC4349;
+  margin: 0px;
+  padding: 0px;
+  height: 18vh;
+}
+
+.title h3 {
+  width: 100%;
+  text-align: center;
+  margin: 0px;
+  color: #2C3E50;
+  margin-bottom: 5px;
+}
+
+.title img {
+  width: 100px;
+  height: 80px;
+}
+
+
+
+.textBox {
+  display: flex;
+  justify-content: center;
+}
+
+.processedText {
+    min-width: 44%;
+    margin: 0px 3% 0px 3%;
+
+}
+
+textarea {
+    resize: none;
+    box-sizing: border-box;
+    overflow: auto;
+    min-width: 44%;
+    max-height: 80vh;
+    margin: 5px 3% 0px 3%;
+    border: 2px solid rgba(0,0,0,0.5);
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #D7DADB;
+}
+
+img {
+  width: 100px;
+}
+
+.markdown-body {
+		box-sizing: border-box;
+    overflow: auto;
+    max-height: 80vh;
+    border: 2px solid rgba(0,0,0,0.5);
+    border-radius: 10px;
+    min-width: 44%;
+    margin: 5px 3% 0px 3%;
+    padding: 10px;
+    background-color: #D7DADB;
+	}
+
+::-webkit-scrollbar {
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  background: rgba(0, 0, 0, 0.1);
+  width: 10px;
+}
+::-webkit-scrollbar-button {
+  background: none;
+  height: 2px;
+
+}
+::-webkit-scrollbar-track {
+  background: none;
+}
+::-webkit-scrollbar-track-piece {
+ background: none;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
